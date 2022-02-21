@@ -1,5 +1,13 @@
 {
-
     "viewportWidth": 1300,
-    "viewportHeight": 800
+    "viewportHeight": 800,
+    "reporter": "mochawesome",
+    "reporterOptions":{
+        "charts":true,
+        "overwrite":false,
+        "html":false,
+        "json":true,
+        "reportDir":"cypress/reports"
+    }
+
 }

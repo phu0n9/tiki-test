@@ -36,12 +36,15 @@ context("Homepage scrolling",()=>{
         
     })
 
+    // enter a keyword and search 
     it("Search and type",()=>{
         scroll.onSearchAndType('.FormSearch__Input-sc-1fwg3wo-2',"tai nghe bluetooth{enter}")
     })
 
-
-    // it("Search and click",()=>{
-    //     scroll.onSearchAndClick('.FormSearch__Input-sc-1fwg3wo-2','[data-view-index="1"] > .keyword')
-    // })
+    // choose an item from search bar and choose a item in filter column 
+    it("Search and click",()=>{
+        scroll.onSearchAndClick('.FormSearch__Input-sc-1fwg3wo-2',
+        '[data-view-index="1"] > .keyword',
+        '[data-view-index="1"] > .style__StyledItem-sc-18svp8n-0')
+    })
 })

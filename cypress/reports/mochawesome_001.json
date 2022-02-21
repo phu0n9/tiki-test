@@ -1,0 +1,201 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-21T09:52:19.445Z",
+    "end": "2022-02-21T09:53:26.290Z",
+    "duration": 66845,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "383ee6d9-698e-4214-8f59-decc94769d3a",
+      "title": "",
+      "fullFile": "cypress/integration/pages/homepage.js",
+      "file": "cypress/integration/pages/homepage.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "75d11f33-8c96-4bc7-8814-f9955dc60549",
+          "title": "Homepage scrolling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Scroll bar button click",
+              "fullTitle": "Homepage scrolling Scroll bar button click",
+              "timedOut": null,
+              "duration": 10164,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// scroll bar button click\nscroll.onClick('.icon-next');",
+              "err": {},
+              "uuid": "453db792-0b7f-4c84-91da-1a3c07b0abdd",
+              "parentUUID": "75d11f33-8c96-4bc7-8814-f9955dc60549",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Scroll banner button click",
+              "fullTitle": "Homepage scrolling Scroll banner button click",
+              "timedOut": null,
+              "duration": 10580,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// scroll banner button click\nscroll.onClick('.slick-next > .icon-wrap > img');",
+              "err": {},
+              "uuid": "76678df8-bcea-4d2d-be43-a77784c1e730",
+              "parentUUID": "75d11f33-8c96-4bc7-8814-f9955dc60549",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Click on each item",
+              "fullTitle": "Homepage scrolling Click on each item",
+              "timedOut": null,
+              "duration": 13064,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.header').scrollIntoView(); // click on each item\ncy.get('.style__StyledInfiniteScrollWidgetHeaderTabs-sc-89j3qn-1 > [data-view-index]').each((item, index, list) => {\n  scroll.onClick(list[index]);\n});",
+              "err": {},
+              "uuid": "eabf5d83-f4a6-4d9d-88a1-0c4ce156a929",
+              "parentUUID": "75d11f33-8c96-4bc7-8814-f9955dc60549",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Infinity Scrolling",
+              "fullTitle": "Homepage scrolling Infinity Scrolling",
+              "timedOut": null,
+              "duration": 8420,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.header').scrollIntoView();\nfor (let i = 0; i < 5; i++) {\n  // inifinity scroll\n  scroll.onClick('.style__Wrapper-sc-hf75l8-0');\n}",
+              "err": {},
+              "uuid": "4a0ce98f-45aa-42d1-9f2d-62f78d87625f",
+              "parentUUID": "75d11f33-8c96-4bc7-8814-f9955dc60549",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search and type",
+              "fullTitle": "Homepage scrolling Search and type",
+              "timedOut": null,
+              "duration": 9544,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scroll.onSearchAndType('.FormSearch__Input-sc-1fwg3wo-2', \"tai nghe bluetooth{enter}\");",
+              "err": {},
+              "uuid": "6c3d7874-e7c0-4d10-88c3-f793d546e67e",
+              "parentUUID": "75d11f33-8c96-4bc7-8814-f9955dc60549",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search and click",
+              "fullTitle": "Homepage scrolling Search and click",
+              "timedOut": null,
+              "duration": 10827,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scroll.onSearchAndClick('.FormSearch__Input-sc-1fwg3wo-2', '[data-view-index=\"1\"] > .keyword', '[data-view-index=\"1\"] > .style__StyledItem-sc-18svp8n-0');",
+              "err": {},
+              "uuid": "0e4f7a40-778a-409f-a3c0-0582baed4600",
+              "parentUUID": "75d11f33-8c96-4bc7-8814-f9955dc60549",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "453db792-0b7f-4c84-91da-1a3c07b0abdd",
+            "76678df8-bcea-4d2d-be43-a77784c1e730",
+            "eabf5d83-f4a6-4d9d-88a1-0c4ce156a929",
+            "4a0ce98f-45aa-42d1-9f2d-62f78d87625f",
+            "6c3d7874-e7c0-4d10-88c3-f793d546e67e",
+            "0e4f7a40-778a-409f-a3c0-0582baed4600"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 62599,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.0.1"
+    }
+  }
+}
